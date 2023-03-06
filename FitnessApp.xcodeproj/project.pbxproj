@@ -10,9 +10,19 @@
 		93B0E9E129B683D000305CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0E9E029B683D000305CD7 /* AppDelegate.swift */; };
 		93B0E9E329B683D000305CD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0E9E229B683D000305CD7 /* SceneDelegate.swift */; };
 		93B0E9E529B683D000305CD7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0E9E429B683D000305CD7 /* MainViewController.swift */; };
-		93B0E9E829B683D000305CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B0E9E629B683D000305CD7 /* Main.storyboard */; };
 		93B0E9EA29B683D100305CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B0E9E929B683D100305CD7 /* Assets.xcassets */; };
 		93B0E9ED29B683D100305CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B0E9EB29B683D100305CD7 /* LaunchScreen.storyboard */; };
+		93B0E9F729B6902000305CD7 /* UIColor + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0E9F629B6902000305CD7 /* UIColor + extensions.swift */; };
+		93B0E9F929B6903300305CD7 /* UILabel + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0E9F829B6903300305CD7 /* UILabel + extensions.swift */; };
+		93B0E9FB29B6905500305CD7 /* UIFont + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0E9FA29B6905500305CD7 /* UIFont + extensions.swift */; };
+		93B0E9FD29B6907000305CD7 /* UIView + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0E9FC29B6907000305CD7 /* UIView + extensions.swift */; };
+		93B0E9FF29B6909100305CD7 /* UIStackView + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0E9FE29B6909100305CD7 /* UIStackView + extensions.swift */; };
+		93B0EA0229B690C100305CD7 /* GreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA0129B690C100305CD7 /* GreenButton.swift */; };
+		93B0EA0429B690D100305CD7 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA0329B690D100305CD7 /* CloseButton.swift */; };
+		93B0EA0629B690EA00305CD7 /* BrownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA0529B690EA00305CD7 /* BrownTextField.swift */; };
+		93B0EA0829B690FC00305CD7 /* GreenSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA0729B690FC00305CD7 /* GreenSlider.swift */; };
+		93B0EA1229B6920000305CD7 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93B0EA1029B6920000305CD7 /* Roboto-Medium.ttf */; };
+		93B0EA1329B6920000305CD7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93B0EA1129B6920000305CD7 /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +30,20 @@
 		93B0E9E029B683D000305CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93B0E9E229B683D000305CD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		93B0E9E429B683D000305CD7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		93B0E9E729B683D000305CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93B0E9E929B683D100305CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93B0E9EC29B683D100305CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93B0E9EE29B683D100305CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B0E9F629B6902000305CD7 /* UIColor + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + extensions.swift"; sourceTree = "<group>"; };
+		93B0E9F829B6903300305CD7 /* UILabel + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + extensions.swift"; sourceTree = "<group>"; };
+		93B0E9FA29B6905500305CD7 /* UIFont + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + extensions.swift"; sourceTree = "<group>"; };
+		93B0E9FC29B6907000305CD7 /* UIView + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extensions.swift"; sourceTree = "<group>"; };
+		93B0E9FE29B6909100305CD7 /* UIStackView + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + extensions.swift"; sourceTree = "<group>"; };
+		93B0EA0129B690C100305CD7 /* GreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButton.swift; sourceTree = "<group>"; };
+		93B0EA0329B690D100305CD7 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		93B0EA0529B690EA00305CD7 /* BrownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownTextField.swift; sourceTree = "<group>"; };
+		93B0EA0729B690FC00305CD7 /* GreenSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenSlider.swift; sourceTree = "<group>"; };
+		93B0EA1029B6920000305CD7 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		93B0EA1129B6920000305CD7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,105 @@
 		93B0E9DF29B683D000305CD7 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				93B0EA0E29B6917500305CD7 /* SupportingFiles */,
+				93B0EA0D29B6916100305CD7 /* Applications */,
+				93B0EA0929B6910D00305CD7 /* MainModule */,
+				93B0E9F429B68FAC00305CD7 /* Extensions */,
+			);
+			path = FitnessApp;
+			sourceTree = "<group>";
+		};
+		93B0E9F429B68FAC00305CD7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93B0EA0029B690A000305CD7 /* Unique */,
+				93B0E9F529B68FB400305CD7 /* UIkit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93B0E9F529B68FB400305CD7 /* UIkit */ = {
+			isa = PBXGroup;
+			children = (
+				93B0E9F629B6902000305CD7 /* UIColor + extensions.swift */,
+				93B0E9F829B6903300305CD7 /* UILabel + extensions.swift */,
+				93B0E9FA29B6905500305CD7 /* UIFont + extensions.swift */,
+				93B0E9FC29B6907000305CD7 /* UIView + extensions.swift */,
+				93B0E9FE29B6909100305CD7 /* UIStackView + extensions.swift */,
+			);
+			path = UIkit;
+			sourceTree = "<group>";
+		};
+		93B0EA0029B690A000305CD7 /* Unique */ = {
+			isa = PBXGroup;
+			children = (
+				93B0EA0129B690C100305CD7 /* GreenButton.swift */,
+				93B0EA0329B690D100305CD7 /* CloseButton.swift */,
+				93B0EA0529B690EA00305CD7 /* BrownTextField.swift */,
+				93B0EA0729B690FC00305CD7 /* GreenSlider.swift */,
+			);
+			path = Unique;
+			sourceTree = "<group>";
+		};
+		93B0EA0929B6910D00305CD7 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				93B0EA0B29B6912500305CD7 /* Views */,
+				93B0EA0A29B6911800305CD7 /* Controllers */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		93B0EA0A29B6911800305CD7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93B0E9E429B683D000305CD7 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93B0EA0B29B6912500305CD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93B0EA0C29B6912F00305CD7 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93B0EA0C29B6912F00305CD7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		93B0EA0D29B6916100305CD7 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
 				93B0E9E029B683D000305CD7 /* AppDelegate.swift */,
 				93B0E9E229B683D000305CD7 /* SceneDelegate.swift */,
-				93B0E9E429B683D000305CD7 /* MainViewController.swift */,
-				93B0E9E629B683D000305CD7 /* Main.storyboard */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		93B0EA0E29B6917500305CD7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				93B0EA0F29B691CF00305CD7 /* Fonts */,
 				93B0E9E929B683D100305CD7 /* Assets.xcassets */,
 				93B0E9EB29B683D100305CD7 /* LaunchScreen.storyboard */,
 				93B0E9EE29B683D100305CD7 /* Info.plist */,
 			);
-			path = FitnessApp;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		93B0EA0F29B691CF00305CD7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				93B0EA1129B6920000305CD7 /* Roboto-Bold.ttf */,
+				93B0EA1029B6920000305CD7 /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +237,8 @@
 			files = (
 				93B0E9ED29B683D100305CD7 /* LaunchScreen.storyboard in Resources */,
 				93B0E9EA29B683D100305CD7 /* Assets.xcassets in Resources */,
-				93B0E9E829B683D000305CD7 /* Main.storyboard in Resources */,
+				93B0EA1329B6920000305CD7 /* Roboto-Bold.ttf in Resources */,
+				93B0EA1229B6920000305CD7 /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +249,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B0EA0429B690D100305CD7 /* CloseButton.swift in Sources */,
 				93B0E9E529B683D000305CD7 /* MainViewController.swift in Sources */,
+				93B0E9F729B6902000305CD7 /* UIColor + extensions.swift in Sources */,
+				93B0E9FB29B6905500305CD7 /* UIFont + extensions.swift in Sources */,
+				93B0E9FF29B6909100305CD7 /* UIStackView + extensions.swift in Sources */,
+				93B0EA0629B690EA00305CD7 /* BrownTextField.swift in Sources */,
 				93B0E9E129B683D000305CD7 /* AppDelegate.swift in Sources */,
 				93B0E9E329B683D000305CD7 /* SceneDelegate.swift in Sources */,
+				93B0EA0829B690FC00305CD7 /* GreenSlider.swift in Sources */,
+				93B0E9F929B6903300305CD7 /* UILabel + extensions.swift in Sources */,
+				93B0EA0229B690C100305CD7 /* GreenButton.swift in Sources */,
+				93B0E9FD29B6907000305CD7 /* UIView + extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		93B0E9E629B683D000305CD7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93B0E9E729B683D000305CD7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		93B0E9EB29B683D100305CD7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +401,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C6LXD6P22Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_FILE = FitnessApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,10 +431,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C6LXD6P22Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_FILE = FitnessApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
