@@ -23,6 +23,8 @@
 		93B0EA0829B690FC00305CD7 /* GreenSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA0729B690FC00305CD7 /* GreenSlider.swift */; };
 		93B0EA1229B6920000305CD7 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93B0EA1029B6920000305CD7 /* Roboto-Medium.ttf */; };
 		93B0EA1329B6920000305CD7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93B0EA1129B6920000305CD7 /* Roboto-Bold.ttf */; };
+		93B0EA1529B6ACF100305CD7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA1429B6ACF100305CD7 /* CalendarView.swift */; };
+		93B0EA1729B6B67B00305CD7 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA1629B6B67B00305CD7 /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		93B0EA0729B690FC00305CD7 /* GreenSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenSlider.swift; sourceTree = "<group>"; };
 		93B0EA1029B6920000305CD7 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		93B0EA1129B6920000305CD7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		93B0EA1429B6ACF100305CD7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		93B0EA1629B6B67B00305CD7 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				93B0EA0C29B6912F00305CD7 /* Cells */,
+				93B0EA1429B6ACF100305CD7 /* CalendarView.swift */,
+				93B0EA1629B6B67B00305CD7 /* WeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,7 +260,9 @@
 				93B0E9F729B6902000305CD7 /* UIColor + extensions.swift in Sources */,
 				93B0E9FB29B6905500305CD7 /* UIFont + extensions.swift in Sources */,
 				93B0E9FF29B6909100305CD7 /* UIStackView + extensions.swift in Sources */,
+				93B0EA1729B6B67B00305CD7 /* WeatherView.swift in Sources */,
 				93B0EA0629B690EA00305CD7 /* BrownTextField.swift in Sources */,
+				93B0EA1529B6ACF100305CD7 /* CalendarView.swift in Sources */,
 				93B0E9E129B683D000305CD7 /* AppDelegate.swift in Sources */,
 				93B0E9E329B683D000305CD7 /* SceneDelegate.swift in Sources */,
 				93B0EA0829B690FC00305CD7 /* GreenSlider.swift in Sources */,
