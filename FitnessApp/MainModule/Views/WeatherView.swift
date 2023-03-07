@@ -36,6 +36,7 @@ class WeatherView: UIView {
         return label
     }()
     
+    //MARK: - LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -43,9 +44,13 @@ class WeatherView: UIView {
         setConstraints()
     }
     
+    //MARK: - Methods
+    
     private func setupViews() {
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         layer.cornerRadius = 10
+        addShadowOnView()
+        
         translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(sunImage)
@@ -58,6 +63,8 @@ class WeatherView: UIView {
     }
     
 }
+
+//MARK: - setConstraints()
 
 extension WeatherView {
     private func setConstraints() {

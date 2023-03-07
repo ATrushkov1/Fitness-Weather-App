@@ -49,6 +49,7 @@ class MainViewController: UIViewController {
                                        right: 0)
         button.titleLabel?.font = .robotoMedium12()
         button.tintColor = .specialDarkGreen
+        button.addShadowOnView()
         button.addTarget(self, action: #selector(addWorkoutButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button

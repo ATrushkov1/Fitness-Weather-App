@@ -25,6 +25,8 @@
 		93B0EA1329B6920000305CD7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93B0EA1129B6920000305CD7 /* Roboto-Bold.ttf */; };
 		93B0EA1529B6ACF100305CD7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA1429B6ACF100305CD7 /* CalendarView.swift */; };
 		93B0EA1729B6B67B00305CD7 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA1629B6B67B00305CD7 /* WeatherView.swift */; };
+		93B0EA1929B6C2C700305CD7 /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA1829B6C2C700305CD7 /* CalendarCollectionView.swift */; };
+		93B0EA1B29B6C45800305CD7 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA1A29B6C45800305CD7 /* CalendarCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		93B0EA1129B6920000305CD7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		93B0EA1429B6ACF100305CD7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		93B0EA1629B6B67B00305CD7 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		93B0EA1829B6C2C700305CD7 /* CalendarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
+		93B0EA1A29B6C45800305CD7 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 				93B0EA0C29B6912F00305CD7 /* Cells */,
 				93B0EA1429B6ACF100305CD7 /* CalendarView.swift */,
 				93B0EA1629B6B67B00305CD7 /* WeatherView.swift */,
+				93B0EA1829B6C2C700305CD7 /* CalendarCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 		93B0EA0C29B6912F00305CD7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				93B0EA1A29B6C45800305CD7 /* CalendarCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -263,8 +269,10 @@
 				93B0EA1729B6B67B00305CD7 /* WeatherView.swift in Sources */,
 				93B0EA0629B690EA00305CD7 /* BrownTextField.swift in Sources */,
 				93B0EA1529B6ACF100305CD7 /* CalendarView.swift in Sources */,
+				93B0EA1B29B6C45800305CD7 /* CalendarCollectionViewCell.swift in Sources */,
 				93B0E9E129B683D000305CD7 /* AppDelegate.swift in Sources */,
 				93B0E9E329B683D000305CD7 /* SceneDelegate.swift in Sources */,
+				93B0EA1929B6C2C700305CD7 /* CalendarCollectionView.swift in Sources */,
 				93B0EA0829B690FC00305CD7 /* GreenSlider.swift in Sources */,
 				93B0E9F929B6903300305CD7 /* UILabel + extensions.swift in Sources */,
 				93B0EA0229B690C100305CD7 /* GreenButton.swift in Sources */,
