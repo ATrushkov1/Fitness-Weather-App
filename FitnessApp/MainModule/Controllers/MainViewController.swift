@@ -57,6 +57,8 @@ class MainViewController: UIViewController {
     
     private let calendarView = CalendarView()
     private let weatherView = WeatherView()
+    private let workoutTodayLabel = UILabel(text: "Workout Today")
+    private let tableView = MainTableView()
     
     //MARK: - LifeCycle
     
@@ -76,6 +78,8 @@ class MainViewController: UIViewController {
         view.addSubview(userNameLabel)
         view.addSubview(addWorkoutButton)
         view.addSubview(weatherView)
+        view.addSubview(workoutTodayLabel)
+        view.addSubview(tableView)
         
     }
     
@@ -112,7 +116,16 @@ extension MainViewController {
             weatherView.topAnchor.constraint(equalTo: calendarView.bottomAnchor, constant: 5),
             weatherView.leadingAnchor.constraint(equalTo: addWorkoutButton.trailingAnchor, constant: 10),
             weatherView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            weatherView.heightAnchor.constraint(equalToConstant: 80)
+            weatherView.heightAnchor.constraint(equalToConstant: 80),
+            
+            workoutTodayLabel.topAnchor.constraint(equalTo: addWorkoutButton.bottomAnchor, constant: 15),
+            workoutTodayLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            workoutTodayLabel.widthAnchor.constraint(equalToConstant: 80),
+            
+            tableView.topAnchor.constraint(equalTo: workoutTodayLabel.bottomAnchor, constant: 5),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 }
