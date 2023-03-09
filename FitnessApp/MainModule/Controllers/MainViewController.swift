@@ -33,7 +33,7 @@ class MainViewController: UIViewController {
         return label
     }()
     
-    private let addWorkoutButton: UIButton = {
+    private lazy var addWorkoutButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .specialYellow
         button.layer.cornerRadius = 10

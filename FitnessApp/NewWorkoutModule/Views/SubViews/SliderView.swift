@@ -67,7 +67,7 @@ class SliderView: UIView {
     private func setupViews() {
         translatesAutoresizingMaskIntoConstraints = false
         
-//        slider.addTarget(self, action: #selector(sliderChanged), for: .valueChanged)
+        slider.addTarget(self, action: #selector(sliderChanged), for: .valueChanged)
  
         let labelsStackView = UIStackView(arrangedSubviews: [nameLabel, numberLabel],
                                           axis: .horizontal,
@@ -79,12 +79,12 @@ class SliderView: UIView {
         addSubview(stackView)
     }
     
-//    @objc private func sliderChanged() {
-//        let intValueSlider = Int(slider.value)
-//        numberLabel.text = sliderType == .timer ? intValueSlider.getTimeFromSeconds() : "\(intValueSlider)"
-//        guard let type = sliderType else { return }
-//        delegate?.changeValue(type: type, value: intValueSlider)
-//    }
+    @objc private func sliderChanged() {
+        let intValueSlider = Int(slider.value)
+        numberLabel.text = sliderType == .timer ? intValueSlider.getTimeFromSeconds() : "\(intValueSlider)"
+        guard let type = sliderType else { return }
+        delegate?.changeValue(type: type, value: intValueSlider)
+    }
 }
 
 //MARK: - Set Constraints

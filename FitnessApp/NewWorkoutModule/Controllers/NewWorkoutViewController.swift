@@ -22,7 +22,7 @@ class NewWorkoutViewController: UIViewController {
 
     private var stackView = UIStackView()
     
-//    private var workoutModel = WorkoutModel()
+    private var workoutModel = WorkoutModel()
     private let testImage = UIImage(named: "testWorkout")
     
     override func viewDidLoad() {

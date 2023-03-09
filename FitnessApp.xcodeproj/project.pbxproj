@@ -17,6 +17,8 @@
 		9301FEC429BA2137007E80E0 /* DateAndRepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FEC329BA2137007E80E0 /* DateAndRepeatView.swift */; };
 		9301FEC629BA22BE007E80E0 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FEC529BA22BE007E80E0 /* SliderView.swift */; };
 		9301FEC829BA22F9007E80E0 /* SliderTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FEC729BA22F9007E80E0 /* SliderTypes.swift */; };
+		9301FECA29BA2DFD007E80E0 /* Int + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FEC929BA2DFD007E80E0 /* Int + extensions.swift */; };
+		9301FECD29BA3F78007E80E0 /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FECC29BA3F78007E80E0 /* WorkoutModel.swift */; };
 		9365242829B73615006525CE /* StatisticTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365242729B73615006525CE /* StatisticTableView.swift */; };
 		9365242A29B7390E006525CE /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365242929B7390E006525CE /* MainTableView.swift */; };
 		9365242C29B744A3006525CE /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365242B29B744A3006525CE /* WorkoutTableViewCell.swift */; };
@@ -52,6 +54,8 @@
 		9301FEC329BA2137007E80E0 /* DateAndRepeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndRepeatView.swift; sourceTree = "<group>"; };
 		9301FEC529BA22BE007E80E0 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		9301FEC729BA22F9007E80E0 /* SliderTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTypes.swift; sourceTree = "<group>"; };
+		9301FEC929BA2DFD007E80E0 /* Int + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int + extensions.swift"; sourceTree = "<group>"; };
+		9301FECC29BA3F78007E80E0 /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
 		9365242729B73615006525CE /* StatisticTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTableView.swift; sourceTree = "<group>"; };
 		9365242929B7390E006525CE /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 		9365242B29B744A3006525CE /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -146,6 +150,14 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		9301FECB29BA3F62007E80E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9301FECC29BA3F78007E80E0 /* WorkoutModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9365242D29B8E37C006525CE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +201,7 @@
 			children = (
 				93B0EA0029B690A000305CD7 /* Unique */,
 				93B0E9F529B68FB400305CD7 /* UIkit */,
+				9301FEC929BA2DFD007E80E0 /* Int + extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,6 +232,7 @@
 		93B0EA0929B6910D00305CD7 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
+				9301FECB29BA3F62007E80E0 /* Models */,
 				93B0EA0B29B6912500305CD7 /* Views */,
 				93B0EA0A29B6911800305CD7 /* Controllers */,
 			);
@@ -389,9 +403,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9365242A29B7390E006525CE /* MainTableView.swift in Sources */,
+				9301FECD29BA3F78007E80E0 /* WorkoutModel.swift in Sources */,
 				93B0EA0429B690D100305CD7 /* CloseButton.swift in Sources */,
 				9301FEA129B9F40F007E80E0 /* MainTabBarController.swift in Sources */,
 				93B0E9E529B683D000305CD7 /* MainViewController.swift in Sources */,
+				9301FECA29BA2DFD007E80E0 /* Int + extensions.swift in Sources */,
 				9365242C29B744A3006525CE /* WorkoutTableViewCell.swift in Sources */,
 				9301FEC429BA2137007E80E0 /* DateAndRepeatView.swift in Sources */,
 				93B0EA2029B6D07000305CD7 /* StatisticViewController.swift in Sources */,
@@ -559,8 +575,9 @@
 				INFOPLIST_FILE = FitnessApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -589,8 +606,9 @@
 				INFOPLIST_FILE = FitnessApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
