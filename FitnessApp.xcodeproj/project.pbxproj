@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9301FE9E29B9EFAC007E80E0 /* StatisticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FE9D29B9EFAC007E80E0 /* StatisticTableViewCell.swift */; };
 		9365242829B73615006525CE /* StatisticTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365242729B73615006525CE /* StatisticTableView.swift */; };
 		9365242A29B7390E006525CE /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365242929B7390E006525CE /* MainTableView.swift */; };
 		9365242C29B744A3006525CE /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365242B29B744A3006525CE /* WorkoutTableViewCell.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9301FE9D29B9EFAC007E80E0 /* StatisticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTableViewCell.swift; sourceTree = "<group>"; };
 		9365242729B73615006525CE /* StatisticTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTableView.swift; sourceTree = "<group>"; };
 		9365242929B7390E006525CE /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 		9365242B29B744A3006525CE /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9365242D29B8E37C006525CE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9301FE9D29B9EFAC007E80E0 /* StatisticTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		93B0E9D429B683D000305CD7 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +230,7 @@
 		93B0EA1E29B6D05600305CD7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9365242D29B8E37C006525CE /* Cell */,
 				9365242729B73615006525CE /* StatisticTableView.swift */,
 			);
 			path = Views;
@@ -302,6 +313,7 @@
 				93B0E9E529B683D000305CD7 /* MainViewController.swift in Sources */,
 				9365242C29B744A3006525CE /* WorkoutTableViewCell.swift in Sources */,
 				93B0EA2029B6D07000305CD7 /* StatisticViewController.swift in Sources */,
+				9301FE9E29B9EFAC007E80E0 /* StatisticTableViewCell.swift in Sources */,
 				93B0E9F729B6902000305CD7 /* UIColor + extensions.swift in Sources */,
 				93B0E9FB29B6905500305CD7 /* UIFont + extensions.swift in Sources */,
 				93B0E9FF29B6909100305CD7 /* UIStackView + extensions.swift in Sources */,
