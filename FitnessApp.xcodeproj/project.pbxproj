@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9301FE9E29B9EFAC007E80E0 /* StatisticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FE9D29B9EFAC007E80E0 /* StatisticTableViewCell.swift */; };
+		9301FEA129B9F40F007E80E0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FEA029B9F40F007E80E0 /* MainTabBarController.swift */; };
+		9301FEA429B9F4D2007E80E0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9301FEA329B9F4D2007E80E0 /* Realm */; };
+		9301FEA629B9F4D2007E80E0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9301FEA529B9F4D2007E80E0 /* RealmSwift */; };
+		9301FEBE29B9F79D007E80E0 /* NewWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FEBD29B9F79D007E80E0 /* NewWorkoutViewController.swift */; };
 		9365242829B73615006525CE /* StatisticTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365242729B73615006525CE /* StatisticTableView.swift */; };
 		9365242A29B7390E006525CE /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365242929B7390E006525CE /* MainTableView.swift */; };
 		9365242C29B744A3006525CE /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365242B29B744A3006525CE /* WorkoutTableViewCell.swift */; };
@@ -36,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		9301FE9D29B9EFAC007E80E0 /* StatisticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTableViewCell.swift; sourceTree = "<group>"; };
+		9301FEA029B9F40F007E80E0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		9301FEBD29B9F79D007E80E0 /* NewWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutViewController.swift; sourceTree = "<group>"; };
 		9365242729B73615006525CE /* StatisticTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTableView.swift; sourceTree = "<group>"; };
 		9365242929B7390E006525CE /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 		9365242B29B744A3006525CE /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -69,12 +75,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9301FEA629B9F4D2007E80E0 /* RealmSwift in Frameworks */,
+				9301FEA429B9F4D2007E80E0 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9301FE9F29B9F3EC007E80E0 /* NavigationModule */ = {
+			isa = PBXGroup;
+			children = (
+				9301FEA029B9F40F007E80E0 /* MainTabBarController.swift */,
+			);
+			path = NavigationModule;
+			sourceTree = "<group>";
+		};
+		9301FEB829B9F753007E80E0 /* NewWorkoutModule */ = {
+			isa = PBXGroup;
+			children = (
+				9301FEBB29B9F784007E80E0 /* Module */,
+				9301FEBA29B9F76E007E80E0 /* Views */,
+				9301FEB929B9F763007E80E0 /* Controllers */,
+			);
+			path = NewWorkoutModule;
+			sourceTree = "<group>";
+		};
+		9301FEB929B9F763007E80E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9301FEBD29B9F79D007E80E0 /* NewWorkoutViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9301FEBA29B9F76E007E80E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9301FEBC29B9F78B007E80E0 /* SubViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9301FEBB29B9F784007E80E0 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		9301FEBC29B9F78B007E80E0 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		9365242D29B8E37C006525CE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,11 +158,13 @@
 		93B0E9DF29B683D000305CD7 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
-				93B0EA0E29B6917500305CD7 /* SupportingFiles */,
+				9301FEB829B9F753007E80E0 /* NewWorkoutModule */,
 				93B0EA0D29B6916100305CD7 /* Applications */,
+				9301FE9F29B9F3EC007E80E0 /* NavigationModule */,
 				93B0EA0929B6910D00305CD7 /* MainModule */,
 				93B0EA1C29B6D03200305CD7 /* StatistikModule */,
 				93B0E9F429B68FAC00305CD7 /* Extensions */,
+				93B0EA0E29B6917500305CD7 /* SupportingFiles */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -252,6 +310,10 @@
 			dependencies = (
 			);
 			name = FitnessApp;
+			packageProductDependencies = (
+				9301FEA329B9F4D2007E80E0 /* Realm */,
+				9301FEA529B9F4D2007E80E0 /* RealmSwift */,
+			);
 			productName = FitnessApp;
 			productReference = 93B0E9DD29B683D000305CD7 /* FitnessApp.app */;
 			productType = "com.apple.product-type.application";
@@ -280,6 +342,9 @@
 				Base,
 			);
 			mainGroup = 93B0E9D429B683D000305CD7;
+			packageReferences = (
+				9301FEA229B9F4D2007E80E0 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 93B0E9DE29B683D000305CD7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -310,6 +375,7 @@
 			files = (
 				9365242A29B7390E006525CE /* MainTableView.swift in Sources */,
 				93B0EA0429B690D100305CD7 /* CloseButton.swift in Sources */,
+				9301FEA129B9F40F007E80E0 /* MainTabBarController.swift in Sources */,
 				93B0E9E529B683D000305CD7 /* MainViewController.swift in Sources */,
 				9365242C29B744A3006525CE /* WorkoutTableViewCell.swift in Sources */,
 				93B0EA2029B6D07000305CD7 /* StatisticViewController.swift in Sources */,
@@ -329,6 +395,7 @@
 				93B0E9F929B6903300305CD7 /* UILabel + extensions.swift in Sources */,
 				93B0EA0229B690C100305CD7 /* GreenButton.swift in Sources */,
 				93B0E9FD29B6907000305CD7 /* UIView + extensions.swift in Sources */,
+				9301FEBE29B9F79D007E80E0 /* NewWorkoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +609,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9301FEA229B9F4D2007E80E0 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9301FEA329B9F4D2007E80E0 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9301FEA229B9F4D2007E80E0 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		9301FEA529B9F4D2007E80E0 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9301FEA229B9F4D2007E80E0 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93B0E9D529B683D000305CD7 /* Project object */;
 }
