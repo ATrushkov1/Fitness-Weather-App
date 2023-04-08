@@ -19,11 +19,15 @@ class NewWorkoutViewController: UIViewController {
     private let repsOrTimerView = RepsOrTimerView()
 
     private lazy var saveButton = GreenButton(text: "SAVE")
+    
+    private let selectorWorkoutCollectionView = SelectorWorkoutCollectionView()
 
     private var stackView = UIStackView()
     
     private var workoutModel = WorkoutModel()
-    private let testImage = UIImage(named: "testWorkout")
+    private var nameImageWorkout = "testWorkout"
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +41,9 @@ class NewWorkoutViewController: UIViewController {
         view.addSubview(newWorkoutLabel)
         view.addSubview(closeButton)
         closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
+        selectorWorkoutCollectionView.imageNameDelegate = self
         stackView = UIStackView(arrangedSubviews: [nameView,
+                                                   selectorWorkoutCollectionView,
                                                    dateAndRepeatView,
                                                    repsOrTimerView],
                                 axis: .vertical,
@@ -45,18 +51,54 @@ class NewWorkoutViewController: UIViewController {
         view.addSubview(stackView)
   
         view.addSubview(saveButton)
-//        saveButton.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
+        saveButton.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
     }
     
     @objc private func closeButtonTapped() {
         dismiss(animated: true)
     }
     
-//    @objc private func saveButtonTapped() {
-//        setModel()
-//        print(workoutModel)
-//        RealmManager.shared.saveWorkoutModel(workoutModel)
-//    }
+    @objc private func saveButtonTapped() {
+        setModel()
+        print(workoutModel)
+        RealmManager.shared.saveWorkoutModel(workoutModel)
+    }
+    
+    private func setModel() {
+        workoutModel.workoutName = nameView.getNameTextFieldText()
+        
+        workoutModel.workoutDate = dateAndRepeatView.getDateAndRepeat().date
+        workoutModel.workoutRepeat = dateAndRepeatView.getDateAndRepeat().isRepeat
+        workoutModel.workoutNumberOfDay = dateAndRepeatView.getDateAndRepeat().date.getWeekdayNumber()
+        
+        workoutModel.workoutSets = repsOrTimerView.sets
+        workoutModel.workoutReps = repsOrTimerView.reps
+        workoutModel.workoutTimer = repsOrTimerView.timer
+        
+        workoutModel.workoutImage = nameImageWorkout
+    }
+    
+    private func addGesture() {
+        
+        let tapScreen = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        tapScreen.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapScreen)
+        
+        let swipeScreen = UISwipeGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(swipeScreen)
+    }
+    @objc private func hideKeyboard() {
+        view.endEditing(true)
+    }
+    
+}
+
+extension NewWorkoutViewController: ImageSelectProtocol {
+    func selectImage(nameImage: String) {
+        nameImageWorkout = nameImage
+    }
+    
+    
 }
 
 extension NewWorkoutViewController {
@@ -71,6 +113,7 @@ extension NewWorkoutViewController {
             closeButton.widthAnchor.constraint(equalToConstant: 33),
             
             nameView.heightAnchor.constraint(equalToConstant: 60),
+            selectorWorkoutCollectionView.heightAnchor.constraint(equalToConstant: 80),
             dateAndRepeatView.heightAnchor.constraint(equalToConstant: 115),
             repsOrTimerView.heightAnchor.constraint(equalToConstant: 340),
 

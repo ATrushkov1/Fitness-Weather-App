@@ -78,6 +78,8 @@ class WorkoutTableViewCell: UITableViewCell {
 
     private var labelsStackView = UIStackView()
     
+    private var workoutModel = WorkoutModel()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -109,6 +111,35 @@ class WorkoutTableViewCell: UITableViewCell {
     @objc private func startButtonTapped() {
         print("tableView cell tap")
     }
+    
+    public func configure(model: WorkoutModel) {
+        
+        workoutModel = model
+        
+        workoutNameLabel.text = model.workoutName
+        
+        if model.workoutTimer == 0 {
+            workoutRepsLabel.text = "Resp: \(model.workoutReps)"
+        } else {
+            workoutRepsLabel.text = "Timer: \(model.workoutTimer.getTimeFromSeconds())"
+        }
+        workoutSetsLabel.text = "Sets: \(model.workoutSets)"
+        
+        if model.workoutStatus {
+            startButton.setTitle("COMPLETE", for: .normal)
+            startButton.tintColor = .white
+            startButton.backgroundColor = .specialDarkGreen
+            startButton.isEnabled = false
+        } else {
+            startButton.setTitle("START", for: .normal)
+            startButton.tintColor = .specialDarkGreen
+            startButton.backgroundColor = .specialYellow
+            startButton.isEnabled = true
+        }
+        
+        workoutImageView.image = UIImage(named: model.workoutImage)
+    }
+    
 }
 
 extension WorkoutTableViewCell {
