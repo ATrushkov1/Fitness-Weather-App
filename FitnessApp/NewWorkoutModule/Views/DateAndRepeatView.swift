@@ -46,6 +46,7 @@ class DateAndRepeatView: UIView {
     private var dateStackView = UIStackView()
     private var repeatStackView = UIStackView()
     
+    //MARK: - LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -53,6 +54,7 @@ class DateAndRepeatView: UIView {
         setConstraints()
     }
     
+    //MARK: - Methods
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -82,8 +84,8 @@ class DateAndRepeatView: UIView {
     }
 }
 
+//MARK: - setConstraints
 extension DateAndRepeatView {
-    
     private func setConstraints() {
 
         NSLayoutConstraint.activate([

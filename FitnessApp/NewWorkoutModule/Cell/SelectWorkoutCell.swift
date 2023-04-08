@@ -20,6 +20,7 @@ class SelectWorkoutCell: UICollectionViewCell {
         return imageView
     }()
     
+    //MARK: - LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -29,6 +30,7 @@ class SelectWorkoutCell: UICollectionViewCell {
         setConstrants()
     }
     
+    //MARK: - Methods
     func configure(nameImage: String) {
         imageView.image = UIImage(named: nameImage)?.withRenderingMode(.alwaysTemplate)
     }
@@ -38,6 +40,7 @@ class SelectWorkoutCell: UICollectionViewCell {
     }
 }
 
+//MARK: - setConstrants
 extension SelectWorkoutCell {
     private func setConstrants() {
         NSLayoutConstraint.activate([

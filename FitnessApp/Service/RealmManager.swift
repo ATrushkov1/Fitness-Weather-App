@@ -9,7 +9,6 @@ import RealmSwift
 
 class RealmManager {
     
-    
     static let shared = RealmManager()
     private init() {}
     
@@ -20,5 +19,4 @@ class RealmManager {
             realm.add(model)
         }
     }
-    
 }

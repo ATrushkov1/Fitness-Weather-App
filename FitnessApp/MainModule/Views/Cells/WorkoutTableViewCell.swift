@@ -80,6 +80,7 @@ class WorkoutTableViewCell: UITableViewCell {
     
     private var workoutModel = WorkoutModel()
     
+    //MARK: - LifeCycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -87,6 +88,7 @@ class WorkoutTableViewCell: UITableViewCell {
         setConstraints()
     }
     
+    //MARK: - Methods
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -142,8 +144,8 @@ class WorkoutTableViewCell: UITableViewCell {
     
 }
 
+//MARK: - setConstraints
 extension WorkoutTableViewCell {
-    
     private func setConstraints() {
         NSLayoutConstraint.activate([
             backgroundCell.topAnchor.constraint(equalTo: topAnchor, constant: 5),

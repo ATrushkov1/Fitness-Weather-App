@@ -61,7 +61,6 @@ class MainViewController: UIViewController {
     private let tableView = MainTableView()
     
     //MARK: - LifeCycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -69,7 +68,6 @@ class MainViewController: UIViewController {
     }
     
     //MARK: - Methods
-    
     private func setupViews() {
         view.backgroundColor = .specialBackground
         
@@ -80,7 +78,6 @@ class MainViewController: UIViewController {
         view.addSubview(weatherView)
         view.addSubview(workoutTodayLabel)
         view.addSubview(tableView)
-        
     }
     
     @objc private func addWorkoutButtonTapped() {
@@ -88,11 +85,9 @@ class MainViewController: UIViewController {
         newWorkoutViewController.modalPresentationStyle = .fullScreen
         present(newWorkoutViewController, animated: true)
     }
-    
 }
 
 //MARK: - setConstraints
-
 extension MainViewController {
     private func setConstraints() {
         NSLayoutConstraint.activate([
@@ -131,4 +126,3 @@ extension MainViewController {
         ])
     }
 }
-

@@ -11,6 +11,7 @@ class CalendarView: UIView {
     
     private let collectionView = CalendarCollectionView()
     
+    //MARK: - LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -18,6 +19,7 @@ class CalendarView: UIView {
         setConstraints()
     }
     
+    //MARK: - Methods
     private func setupViews() {
         backgroundColor = .specialGreen
         layer.cornerRadius = 10
@@ -32,6 +34,7 @@ class CalendarView: UIView {
     }
 }
 
+//MARK: - setConstraints
 extension CalendarView {
     private func setConstraints() {
         NSLayoutConstraint.activate([

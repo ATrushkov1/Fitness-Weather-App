@@ -28,13 +28,14 @@ class NewWorkoutViewController: UIViewController {
     private var nameImageWorkout = "testWorkout"
     
 
-    
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         setConstraints()
     }
     
+    //MARK: - Methods
     private func setupViews() {
         view.backgroundColor = .specialBackground
         
@@ -101,6 +102,7 @@ extension NewWorkoutViewController: ImageSelectProtocol {
     
 }
 
+//MARK: - setConstraints
 extension NewWorkoutViewController {
     private func setConstraints() {
         NSLayoutConstraint.activate([

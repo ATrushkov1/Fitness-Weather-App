@@ -22,6 +22,7 @@ class StatisticTableView: UITableView {
 
     }
     
+    //MARK: - Methods
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

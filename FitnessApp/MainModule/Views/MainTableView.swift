@@ -10,7 +10,6 @@ import UIKit
 class MainTableView: UITableView {
     
     //MARK: - LifeCycle
-    
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         
@@ -20,7 +19,6 @@ class MainTableView: UITableView {
     }
     
     //MARK: - Methods
-    
     private func configure() {
         backgroundColor = .none
         separatorStyle = .none

@@ -14,7 +14,6 @@ class CalendarCollectionView: UICollectionView {
     private let idCalendarCell = "idCalendarCell"
     
     //MARK: - LifeCycle
-    
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: collectionLayout)
         
@@ -25,7 +24,6 @@ class CalendarCollectionView: UICollectionView {
     }
     
     //MARK: - Methods
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -46,7 +44,6 @@ class CalendarCollectionView: UICollectionView {
 }
 
 //MARK: - UICollectionViewDataSource
-
 extension CalendarCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         7

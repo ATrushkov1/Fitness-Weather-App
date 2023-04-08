@@ -9,6 +9,7 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
     
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -16,6 +17,7 @@ class MainTabBarController: UITabBarController {
         setupItems()
     }
     
+    //MARK: - Methods
     private func setupTabBar() {
         tabBar.backgroundColor = .specialTabBar
         tabBar.tintColor = .specialDarkGreen

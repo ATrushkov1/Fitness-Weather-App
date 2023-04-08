@@ -30,7 +30,6 @@ class RepsOrTimerView: UIView {
     public var (sets, reps, timer) = (0, 0, 0)
     
     //MARK: - LifCycle
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -40,7 +39,6 @@ class RepsOrTimerView: UIView {
     }
     
     //MARK: - Methods
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -69,7 +67,6 @@ class RepsOrTimerView: UIView {
 }
 
 //MARK: - SliderViewProtocol
-
 extension RepsOrTimerView: SliderViewProtocol {
     func changeValue(type: SliderType, value: Int) {
         switch type {
@@ -90,7 +87,6 @@ extension RepsOrTimerView: SliderViewProtocol {
 }
 
 //MARK: - Set Constraints
-
 extension RepsOrTimerView {
     
     private func setConstraints() {

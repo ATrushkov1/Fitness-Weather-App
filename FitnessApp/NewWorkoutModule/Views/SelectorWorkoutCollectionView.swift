@@ -20,6 +20,7 @@ class SelectorWorkoutCollectionView: UICollectionView {
     
     private let collectionLayout = UICollectionViewFlowLayout()
     
+    //MARK: - LifeCycle
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: .zero, collectionViewLayout: collectionLayout)
         
@@ -30,6 +31,7 @@ class SelectorWorkoutCollectionView: UICollectionView {
         register(SelectWorkoutCell.self, forCellWithReuseIdentifier: SelectWorkoutCell.idSelectWorkoutCell)
     }
     
+    //MARK: - Methods
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -49,6 +51,7 @@ class SelectorWorkoutCollectionView: UICollectionView {
     }
 }
 
+//MARK: - UICollectionViewDataSource
 extension SelectorWorkoutCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         imageNamesArray.count
@@ -64,12 +67,14 @@ extension SelectorWorkoutCollectionView: UICollectionViewDataSource {
     }
 }
 
+//MARK: - UICollectionViewDelegateFlowLayout
 extension SelectorWorkoutCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: collectionView.frame.width / 5, height: collectionView.frame.height)
     }
 }
 
+//MARK: - UICollectionViewDelegate
 extension SelectorWorkoutCollectionView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         imageNameDelegate?.selectImage(nameImage: imageNamesArray[indexPath.row])

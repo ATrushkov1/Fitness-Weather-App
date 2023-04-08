@@ -88,7 +88,6 @@ class SliderView: UIView {
 }
 
 //MARK: - Set Constraints
-
 extension SliderView {
     
     private func setConstraints() {

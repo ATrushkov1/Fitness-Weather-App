@@ -36,6 +36,7 @@ class StatisticViewController: UIViewController {
     private let tableView = StatisticTableView()
     private let exercisesLabel = UILabel(text: "Exercises")
 
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,6 +44,7 @@ class StatisticViewController: UIViewController {
         setConstraints()
     }
 
+    //MARK: - Methods
     private func setupViews() {
         view.backgroundColor = .specialBackground
 
@@ -61,12 +63,9 @@ class StatisticViewController: UIViewController {
     }
 }
 
-//MARK: - Set Constraints
-
+//MARK: - setConstraints
 extension StatisticViewController {
-
     private func setConstraints() {
-
         NSLayoutConstraint.activate([
             statisticLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             statisticLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),

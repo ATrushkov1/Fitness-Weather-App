@@ -40,6 +40,7 @@ class StatisticTableViewCell: UITableViewCell {
         return view
     }()
 
+    //MARK: - LifeCycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -47,6 +48,7 @@ class StatisticTableViewCell: UITableViewCell {
         setConstraints()
     }
     
+    //MARK: - Methods
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -66,8 +68,8 @@ class StatisticTableViewCell: UITableViewCell {
     }
 }
 
+//MARK: - setConstraints
 extension StatisticTableViewCell {
-    
     private func setConstraints() {
         NSLayoutConstraint.activate([
             differenceLabel.centerYAnchor.constraint(equalTo: centerYAnchor),

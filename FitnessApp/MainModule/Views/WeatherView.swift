@@ -45,7 +45,6 @@ class WeatherView: UIView {
     }
     
     //MARK: - Methods
-    
     private func setupViews() {
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         layer.cornerRadius = 10
@@ -64,8 +63,7 @@ class WeatherView: UIView {
     
 }
 
-//MARK: - setConstraints()
-
+//MARK: - setConstraints
 extension WeatherView {
     private func setConstraints() {
         NSLayoutConstraint.activate([
@@ -83,6 +81,5 @@ extension WeatherView {
             detailsTextWeather.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
             detailsTextWeather.trailingAnchor.constraint(equalTo: sunImage.leadingAnchor, constant: -5)
         ])
-
     }
 }

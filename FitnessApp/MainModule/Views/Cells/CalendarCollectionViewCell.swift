@@ -43,6 +43,7 @@ class CalendarCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    //MARK: - LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -50,6 +51,7 @@ class CalendarCollectionViewCell: UICollectionViewCell {
         setConstraints()
     }
     
+    //MARK: - Methods
     private func setupViews() {
         layer.cornerRadius = 10
         
@@ -63,6 +65,8 @@ class CalendarCollectionViewCell: UICollectionViewCell {
     
     
 }
+
+//MARK: - setConstraints
 extension CalendarCollectionViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([

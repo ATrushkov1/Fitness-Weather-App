@@ -13,7 +13,6 @@ class NameView: UIView {
     private let nameTextField = BrownTextField()
     
     //MARK: - LifeCycle
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -21,8 +20,7 @@ class NameView: UIView {
         setConstraints()
     }
     
-    //MARK: - Mathods
-    
+    //MARK: - Methods
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -40,7 +38,6 @@ class NameView: UIView {
 }
 
 //MARK: - setConstraints()
-
 extension NameView {
     private func setConstraints() {
         NSLayoutConstraint.activate([
