@@ -8,7 +8,7 @@
 import UIKit
 
 class CalendarCollectionViewCell: UICollectionViewCell {
-    
+        
     private let dayOfWeekLabel: UILabel = {
        let label = UILabel()
         label.text = "We"

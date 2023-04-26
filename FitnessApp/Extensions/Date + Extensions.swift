@@ -39,5 +39,11 @@ extension Date {
         }
         return weekArray
     }
+    
+    //смещение в днях
+    func offsetDays(day: Int) -> Date {
+        let offsetDay = Calendar.current.date(byAdding: .day, value: -day, to: self) ?? Date()
+        return offsetDay
+    }
 }
 

@@ -72,6 +72,7 @@ class MainViewController: UIViewController {
         view.backgroundColor = .specialBackground
         
         view.addSubview(calendarView)
+        calendarView.setDelegate(self)
         view.addSubview(userPhotoImage)
         view.addSubview(userNameLabel)
         view.addSubview(addWorkoutButton)
@@ -84,6 +85,13 @@ class MainViewController: UIViewController {
         let newWorkoutViewController = NewWorkoutViewController()
         newWorkoutViewController.modalPresentationStyle = .fullScreen
         present(newWorkoutViewController, animated: true)
+    }
+}
+
+//MARK: - CalendarViewProtocol
+extension MainViewController: CalendarViewProtocol {
+    func selectItem(date: Date) {
+        print(date)
     }
 }
 
