@@ -47,6 +47,7 @@
 		93B0EA1929B6C2C700305CD7 /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA1829B6C2C700305CD7 /* CalendarCollectionView.swift */; };
 		93B0EA1B29B6C45800305CD7 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA1A29B6C45800305CD7 /* CalendarCollectionViewCell.swift */; };
 		93B0EA2029B6D07000305CD7 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0EA1F29B6D07000305CD7 /* StatisticViewController.swift */; };
+		93FB448E29F98CE800D4C7BD /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FB448D29F98CE800D4C7BD /* UIViewController + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		93B0EA1829B6C2C700305CD7 /* CalendarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
 		93B0EA1A29B6C45800305CD7 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		93B0EA1F29B6D07000305CD7 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		93FB448D29F98CE800D4C7BD /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 				93B0E9FA29B6905500305CD7 /* UIFont + extensions.swift */,
 				93B0E9FC29B6907000305CD7 /* UIView + extensions.swift */,
 				93B0E9FE29B6909100305CD7 /* UIStackView + extensions.swift */,
+				93FB448D29F98CE800D4C7BD /* UIViewController + Extensions.swift */,
 			);
 			path = UIkit;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				9301FEC429BA2137007E80E0 /* DateAndRepeatView.swift in Sources */,
 				93B0EA2029B6D07000305CD7 /* StatisticViewController.swift in Sources */,
 				9301FE9E29B9EFAC007E80E0 /* StatisticTableViewCell.swift in Sources */,
+				93FB448E29F98CE800D4C7BD /* UIViewController + Extensions.swift in Sources */,
 				93B0E9F729B6902000305CD7 /* UIColor + extensions.swift in Sources */,
 				9307BC7129BA463B007B261A /* Date + Extensions.swift in Sources */,
 				93B0E9FB29B6905500305CD7 /* UIFont + extensions.swift in Sources */,

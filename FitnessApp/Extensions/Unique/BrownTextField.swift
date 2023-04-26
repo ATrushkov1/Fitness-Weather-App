@@ -9,12 +9,15 @@ import UIKit
 
 class BrownTextField: UITextField {
 
+    //MARK: - LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         configure()
+        delegate = self
     }
     
+    //MARK: - Methods
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -34,4 +37,12 @@ class BrownTextField: UITextField {
         returnKeyType = .done
         translatesAutoresizingMaskIntoConstraints = false
     }
+}
+
+//MARK: - UITextFieldDelegate
+extension BrownTextField: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() //скрываем клавиатуру по кнопке done
+    }
+    
 }

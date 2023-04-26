@@ -32,6 +32,7 @@ class NewWorkoutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        addGesture()
         setConstraints()
     }
     
@@ -61,8 +62,9 @@ class NewWorkoutViewController: UIViewController {
     
     @objc private func saveButtonTapped() {
         setModel()
-        print(workoutModel)
-        RealmManager.shared.saveWorkoutModel(workoutModel)
+        saveModel()
+//        print(workoutModel)
+//        RealmManager.shared.saveWorkoutModel(workoutModel)
     }
     
     private func setModel() {
@@ -79,6 +81,29 @@ class NewWorkoutViewController: UIViewController {
         workoutModel.workoutImage = nameImageWorkout
     }
     
+    private func saveModel() {
+        let text = nameView.getNameTextFieldText()
+        let count = text.filter { $0.isNumber || $0.isLetter }.count
+
+        if count != 0 &&
+            workoutModel.workoutSets != 0 &&
+            (workoutModel.workoutReps != 0 || workoutModel.workoutTimer != 0) {
+            RealmManager.shared.saveWorkoutModel(workoutModel)
+            presentSimpleAlert(title: "Success", message: nil)
+            workoutModel = WorkoutModel()
+//            print(workoutModel)
+            resetValue()
+        } else {
+            presentSimpleAlert(title: "Error", message: "Enter all parameters")
+        }
+    }
+    
+    private func resetValue() {
+        nameView.deleteTextFieldText()
+        dateAndRepeatView.resetDataAndRepeat()
+        repsOrTimerView.resetSliderViewValues()
+    }
+    
     private func addGesture() {
         
         let tapScreen = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
@@ -86,20 +111,18 @@ class NewWorkoutViewController: UIViewController {
         view.addGestureRecognizer(tapScreen)
         
         let swipeScreen = UISwipeGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        swipeScreen.cancelsTouchesInView = false
         view.addGestureRecognizer(swipeScreen)
     }
     @objc private func hideKeyboard() {
         view.endEditing(true)
     }
-    
 }
 
 extension NewWorkoutViewController: ImageSelectProtocol {
     func selectImage(nameImage: String) {
         nameImageWorkout = nameImage
     }
-    
-    
 }
 
 //MARK: - setConstraints
